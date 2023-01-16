@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+section {
+    font-family: "Roboto Condensed", sans-serif ;
+    height: 100vh;
+    color: #ccc;
+    text-shadow: 1px 1px 2px black;
+    background-image: linear-gradient(to right, #b39c9c 0%, rgb(7, 173, 7), rgb(201, 201, 13) 100%);
+}
+
+h1 {
+    font-family:"Roboto italic";
+    padding-top: 2rem;
+    color: #d3caca;
+}
+
+footer {
+    background-image: linear-gradient(to right, #070606 0%, rgb(10, 147, 10));
+}
+
+.card {
+ height: 470px;
+ width: 300px;
+ position: relative;
+ transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+ border-radius: auto;
+ box-shadow: 0 0 20px 8px #d0d0d0;
+ ;
+}
+
+.card img{
+    width: 298px;
+    height: 70%;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #12368b;
+    background: linear-gradient(to top, #0a3394, #4286f4);
+}
+
+.card.title {
+    font-weight: 500;
+}
+
+.card-text {
+    font-style: italic;
+}
+
+.card:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 9px 1px rgb(23, 16, 16);
+}
+
+.card-description {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #e6dede;
+    height: 70%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+
+/* Hover states */
+
+.card:hover .card-description {
+    transform: translateY(100%);
+   }
